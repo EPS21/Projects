@@ -1,2 +1,2 @@
 # Tech-Academy-Projects
-Tech Academy projects for research purposes
+Coursework and little things I've made during my time at this Bootcamp
