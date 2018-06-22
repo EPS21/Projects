@@ -1,2 +1,0 @@
-File.CopyFile("C:\Folder 1\file.txt", "C:\Folder 2\")
-TextWindow.Show()

@@ -1,5 +1,0 @@
-For i = 100 To 1 Step -1
-  TextWindow.WriteLine(i)
-  Program.Delay(100)
-EndFor
-  
