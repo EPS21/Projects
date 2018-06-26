@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MonDBModelStoreContainer" CdmEntityContainer="MonDBEntities">
+    <EntitySetMapping Name="Monsters">
+      <EntityTypeMapping TypeName="MonDBModel.Monster">
+        <MappingFragment StoreEntitySet="Monster">
+          <ScalarProperty Name="Monster_ID" ColumnName="Monster_ID" />
+          <ScalarProperty Name="Monster_Name" ColumnName="Monster_Name" />
+          <ScalarProperty Name="Monster_HP" ColumnName="Monster_HP" />
+          <ScalarProperty Name="Monster_Race" ColumnName="Monster_Race" />
+          <ScalarProperty Name="Monster_Property" ColumnName="Monster_Property" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
