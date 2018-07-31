@@ -117,8 +117,10 @@ namespace ScheduleUsers.ViewModels
         /// <param name="workTimeEventList"></param>
         public WorkTimeEventCreateViewModel(int userVerification, WorkTimeEvent unfinishedEvent, int newMessages)
         {
+            if (unfinishedEvent == null) {
+                return new WorkTimeEvent();
+            }            
             UserVerification = userVerification;
-
             // Displays just the start time of the unfinishedEvent from a previous day
             ClockInOut += unfinishedEvent.Start.ToShortTimeString();
             ClockInOut += " - " + unfinishedEvent.Start.DayOfWeek;
@@ -126,7 +128,7 @@ namespace ScheduleUsers.ViewModels
             // checks the number of messages from WorkTimeEventController and sends the message notification
             if (newMessages > 0)
             {
-                newMessagesNotification = "You have new unread messages. Please login. </br>";
+                newMessagesNotification = "You have new unread messages. Please login.";
             }
         }
     }
