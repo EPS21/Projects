@@ -44,10 +44,8 @@ namespace ScheduleUsers.ViewModels
         public ClockInViewModel(ApplicationUser user, bool valid, ApplicationDbContext db, string prop)
         {            
             ValidUser = valid;
-
             // Grabs the worktime events that have not ended, which is the matching userID inputted
             var clockEvent = db.WorkTimeEvents.Where(e => e.End == null).Where(u => u.User.Id == user.Id).FirstOrDefault();
-
             // If the clockEvent exists, sets the note to what user inputted
             if (clockEvent != null) Note = clockEvent.Note;
             else Note = "";
