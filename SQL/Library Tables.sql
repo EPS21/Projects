@@ -1,9 +1,9 @@
 /*********************************************************************
  ********** Transact-SQL Example Library Database project ************
  * This is an example of creating a SQL database for seven different *
- * joined tables for a library resource tracking system including	 *
- * book information, library branches, library patrons and their	 *
- * checkout records.												 *
+ * joined tables for a library resource tracking system including    *
+ * book information, library branches, library patrons and their     *
+ * checkout records.						     *
  *********************************************************************/
 
 CREATE DATABASE db_books;
