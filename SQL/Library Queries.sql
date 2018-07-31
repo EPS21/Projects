@@ -1,7 +1,7 @@
 /***********************************************************
  * These are the query statements that are saved as stored *
  * procedures which can be run with different values	   *
- * depending on what you want to display *******************
+ * depending on what you want to display                   *
  ***********************************************************/
 
 /* Some queries for testing */
