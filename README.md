@@ -1,2 +1,2 @@
-# Tech-Academy-Projects
-Projects I've created and worked on during my time at The Tech Academy Bootcamp, Prosper IT Consulting, and more
+# Projects
+Things I've created and worked on, personal projects and during my time at Prosper IT Consulting
