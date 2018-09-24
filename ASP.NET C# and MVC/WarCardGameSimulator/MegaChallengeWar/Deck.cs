@@ -89,7 +89,7 @@ namespace MegaChallengeWar
         // Calls Shuffle() method to shuffle the cards, then adds each card to 
         // each players hand and removes it from the deck each time
         public string Deal(Player player1, Player player2)
-        {
+        {            
             shuffle();
             while (_cards.Count > 0)
             {
