@@ -11,6 +11,7 @@ using MonsterDB.DAL;
 using LinqToExcel;
 using System.IO;
 using System.Threading;
+using ResumeParser;
 
 namespace MonsterDB.Controllers
 {
@@ -20,6 +21,31 @@ namespace MonsterDB.Controllers
         //private MonDBEntities db = new MonDBEntities();
 
         private MonsterContext db = new MonsterContext();
+
+        public ActionResult resume()
+        {
+            ResumeParse parser = new ResumeParse();
+
+            var output = parser.Parse("C:\\Users\\EPS21\\Documents\\Tech-Academy-Projects\\ASP.NET C# and MVC\\MonsterDB\\MonsterDB\\resumes\\EricSheng_Resume.docx");
+            //C:\Users\EPS21\Documents\Tech-Academy-Projects\ASP.NET C# and MVC\MonsterDB\MonsterDB\resumes\EricSheng_Resume.docx
+
+            var FirstName = output.FirstName;
+            ViewBag.fname = FirstName;
+
+            //MiddleName = output.MiddleName;
+            //LastName = output.LastName;
+            //Gender = output.Gender;
+            //EmailAddress = output.EmailAddress;
+            //PhoneNumbers = output.PhoneNumbers;
+            //Languages = output.Languages;
+            //SummaryDescription = output.SummaryDescription;
+            //Address1 = output.Address1;
+            //Location = output.Location;
+            //ZipCode = output.ZipCode;
+
+
+            return View();
+        }
 
 
         // GET Import
